@@ -9,8 +9,8 @@ import absl.logging
 
 
 # Configure Gemini API
-API_KEY = "AIzaSyB1VcqlqkleYVuD0QVNb6KxORUgGZImTHs"
-genai.configure(api_key=API_KEY)
+import os
+API_KEY = os.environ["GEMINI_API_KEY"]
 
 
 def preprocess_image(image_path):
